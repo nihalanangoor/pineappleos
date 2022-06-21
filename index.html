@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pineapple OS</title>
+    <link rel="stylesheet" href="./os folders/style.css">
+    <link rel="icon" href="./os folders/logo.png" >
+</head>
+
+<body>
+<div class="fullholder" style="display: none;">
+    <div class="taskbar">
+<div class="appicholder">
+    <svg onclick="syslisttask()" style="display: flex;align-items:center;justify-content:center;" width="50" height="50" viewBox="0 0 100 180">
+        <path style="fill:#ffffff;stroke-width:0.264583" d="m 65.030038,163.52319 c -6.60943,-1.04365 -9.82108,-2.17045 -11.64167,-4.08445 -4.09295,-4.30295 -5.52121,-6.75872 -6.47481,-11.13286 -0.23793,-1.09141 -0.91092,-3.41312 -1.49551,-5.15937 l -1.062912,-3.175 0.07286,-4.49792 c 0.108448,-6.69549 0.08828,-8.18122 -0.154776,-11.40312 -0.191066,-2.5327 -0.139972,-3.38762 0.371605,-6.21771 1.070803,-5.92381 1.325483,-6.93849 2.849173,-11.35105 1.41983,-4.11177 1.5865,-4.44502 2.8663,-5.73107 1.40409,-1.410932 4.7271,-3.194433 9.57206,-5.137445 2.11215,-0.847051 2.16444,-0.888998 1.72011,-1.379966 -1.8827,-2.080361 -8.01765,-3.856879 -13.68806,-3.963697 -1.76707,-0.03329 -2.5183,0.100513 -4.548462,0.810112 -1.337492,0.467492 -2.617414,0.849985 -2.844271,0.849985 -1.222875,0 0.340596,-2.042589 2.609345,-3.408966 3.132438,-1.886545 7.909968,-2.930533 13.448498,-2.938772 0.83674,-0.0013 1.51988,-0.09156 1.51808,-0.200699 -0.006,-0.384197 -3.85213,-3.065979 -5.43436,-3.789532 -2.24759,-1.027819 -4.43023,-1.377955 -8.783643,-1.409054 -2.996187,-0.02141 -3.770249,-0.10109 -3.770312,-0.388126 -1.25e-4,-0.58915 1.863024,-2.122312 3.649064,-3.002769 0.915623,-0.451371 1.569001,-0.916437 1.451951,-1.033483 -0.3299,-0.329899 -6.625748,-1.290987 -8.457305,-1.291045 -1.787163,-5.9e-5 -3.121719,-0.372756 -2.858694,-0.798338 0.298046,-0.482246 2.694324,-1.561783 4.810149,-2.167001 1.76175,-0.503939 2.690022,-0.589425 6.29955,-0.580147 3.88588,0.01 4.40215,0.06902 6.29024,0.719244 2.34849,0.80877 4.83871,2.015701 6.4759,3.138659 0.61847,0.424206 1.12448,0.652685 1.12448,0.507727 0,-0.403053 -2.38829,-3.175883 -3.99287,-4.635774 -1.99743,-1.817301 -4.1888,-3.176434 -9.18822,-5.69871 -2.374643,-1.198043 -4.384749,-2.35341 -4.466897,-2.567479 -0.303853,-0.791834 0.40903,-1.001535 3.300505,-0.970875 4.272842,0.04531 9.087562,1.391681 13.242982,3.703227 0.92049,0.512043 1.72881,0.875797 1.79627,0.808342 0.24282,-0.242816 -0.61414,-2.23288 -1.62582,-3.775559 -1.98625,-3.028757 -8.81415,-9.399399 -16.386774,-15.289375 -1.313437,-1.021589 -1.155973,-1.570747 0.522867,-1.823492 4.655777,-0.700917 12.206067,1.895812 16.941877,5.826729 0.95395,0.791819 1.77852,1.395611 1.83237,1.34176 0.31817,-0.318169 -3.64898,-7.278726 -6.16221,-10.811906 -1.49462,-2.101182 -5.84393,-7.222921 -7.13707,-8.404616 -1.26891,-1.159544 -0.8993,-1.446879 1.26882,-0.986389 4.343,0.922414 8.54691,2.737929 11.50938,4.970467 1.75353,1.321473 5.00378,5.122856 6.55943,7.671685 0.55175,0.904004 1.08753,1.58645 1.19063,1.516545 0.10309,-0.06991 0.44331,-1.081936 0.75603,-2.248958 0.99954,-3.730041 1.66149,-5.514938 4.27029,-11.514566 1.05442,-2.424923 1.70352,-3.60097 2.02144,-3.662484 0.44403,-0.08591 0.45819,0.417935 0.27326,9.723437 -0.11301,5.686783 -0.0962,9.810591 0.0399,9.805831 0.12919,-0.0045 1.06833,-1.270291 2.08698,-2.812828 3.37986,-5.118139 7.08227,-8.249137 13.81146,-11.679885 4.62198,-2.356424 5.09544,-2.186594 2.43909,0.874887 -2.41968,2.788717 -3.75271,4.943336 -6.0874,9.83931 -1.16664,2.446504 -2.23498,4.656548 -2.37409,4.91121 -0.44752,0.819266 0.2039,0.515569 1.65111,-0.769763 2.82252,-2.506789 7.00003,-4.631971 9.88153,-5.026925 1.31084,-0.179671 1.64577,0.287478 0.65137,0.908494 -0.84841,0.529841 -4.80224,4.073782 -4.68063,4.195395 0.0607,0.06066 1.16905,-0.148804 2.46309,-0.465471 3.80004,-0.929915 9.874932,-0.821765 14.502902,0.258194 0.42517,0.09921 0.82147,0.325726 0.88068,0.503362 0.12622,0.378656 -0.24443,0.542544 -3.77036,1.667084 -3.1265,0.997148 -7.094242,2.935478 -10.095152,4.931703 -2.33388,1.552506 -7.23506,5.539856 -7.23506,5.886069 0,0.117015 0.84014,0.295539 1.86698,0.396721 1.02684,0.101182 3.02113,0.416484 4.43177,0.700667 1.41064,0.284187 3.22673,0.642231 4.03577,0.795658 2.580882,0.489442 2.798852,1.10264 0.500322,1.407551 -1.367592,0.181417 -5.158632,1.459016 -7.542272,2.541778 -3.90751,1.774979 -4.61549,2.115844 -4.61549,2.222167 0,0.06411 0.68461,0.253711 1.52136,0.421333 2.647,0.530259 4.70352,1.249592 7.51884,2.629961 3.534562,1.733018 8.025432,4.560514 8.025432,5.052895 0,0.565097 -0.11149,0.549466 -7.408342,-1.038807 -1.89177,-0.411771 -3.48806,-0.707649 -3.54731,-0.657502 -0.0592,0.05014 0.92801,1.060211 2.1939,2.244592 3.737252,3.496596 8.486292,9.398164 8.188102,10.175231 -0.20239,0.527437 -0.40477,0.48354 -1.99285,-0.432265 -4.219512,-2.433286 -13.146802,-6.18813 -13.610362,-5.724562 -0.0701,0.07006 0.56451,0.661152 1.41015,1.313543 2.80257,2.1621 9.590522,9.468733 9.601302,10.334941 0.003,0.26679 -0.0833,0.445384 -0.19241,0.396875 -0.109142,-0.04851 -1.029612,-0.504912 -2.045502,-1.014235 -1.80345,-0.904174 -1.91904,-0.925496 -4.89479,-0.902933 -3.14644,0.02387 -4.83055,0.347581 -7.74408,1.488596 -0.83675,0.327692 -1.52136,0.66421 -1.52136,0.747819 0,0.08361 0.86321,0.365942 1.91823,0.627409 2.45684,0.608875 5.68433,2.715005 7.8823,5.143664 1.29879,1.4351 1.70944,2.12437 2.2302,3.74336 0.35105,1.09141 1.07336,3.23267 1.60513,4.75836 0.60813,1.74481 1.06156,3.65899 1.22214,5.15938 0.14041,1.31197 0.49674,3.76307 0.79186,5.44689 0.47223,2.69442 0.50073,3.36163 0.23768,5.56473 -0.17243,1.44417 -0.26629,5.35413 -0.22185,9.24163 0.0727,6.35699 0.0436,6.84322 -0.51293,8.59047 -0.32447,1.01865 -0.70049,2.77962 -0.83558,3.91327 -0.40685,3.41398 -1.85011,6.04803 -5.80026,10.5859 -3.59761,4.13288 -5.17337,4.93373 -10.76587,5.47153 -1.60073,0.15394 -3.92245,0.40443 -5.15938,0.55664 -3.66797,0.45137 -8.90776,0.50384 -11.37708,0.11393 z"  />
+  </svg>
+  
+     <h1 class="appopt" onclick="listtask()">Applications</h1>
+</div>
+
+
+        <div class="battery_date_area">
+<div class="battery_area" onclick="batboxtask();">
+    <span class="batteryperc">100%</span>
+    <div class="batterymain">
+        <div class="battery_in">
+            <svg class="charging_battery" viewBox="0 0 16 16">
+                <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+              </svg>
+        </div>
+    </div>
+</div>
+            <div class="date" onclick="dateboxtask()">
+                <span class="hours">00</span>:<span class="minutes">00</span>
+            </div>
+        </div>
+    </div>
+    <div ondrop="imgfiledrop(event)" ondragover="imgfileallowDrop(event)" ondblclick="topBeforeMinimizedgal=5;leftBeforeMinimizedgal=5;opentrash()" class="trssh_icon_home_page">
+        <img src="./os folders/trash empty.png" class="trasimgic" alt="">
+        <span class="trash_titl">Trash</span>
+    </div>
+    <div class="clrearRecycleBinContextMenu">
+        <table class="trashContext">
+            <tr class="opentrsh" onclick="opentrash()">
+                <td>
+                    Open
+                </td>
+            </tr>
+            <tr class="clrtrsh" onclick="cleartrash()">
+                <td>
+                    Clear Trash
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div onmouseleave="hidelist()" class="applist">
+        <table class="menu">
+            <tr onclick="listtask();topBeforeMinimized=5;leftBeforeMinimized=5;maximizeWindow()">
+                <td class="applisticon"></td><td class="appname">Ucanvas</td>
+            </tr>
+    <tr onclick="listtask();topBeforeMinimizedgal=5;leftBeforeMinimizedgal=5;galsavedwidth=window.innerWidth-20;galsavedheight=window.innerHeight-20;image_folder_show();maximizegallery()">
+                <td class="applisticon2"></td><td class="appname">UGallery</td>
+            </tr>
+        </table>
+    </div>
+    <div class="batter_date_details">
+        <span class="batind_det">Battery Level</span>
+        <h1 class="battery_det_perc"> 100%</h1>
+        <span class="batrem_det">0hours remaining</span>
+    </div>
+    <div class="date_area">
+        <h1 class="time timearea">00:00:00</h1>
+        <h1 class="datedet timearea">00 month 2022</h1>
+        <h1 class="daywhich timearea">Funday</h1>
+    </div>
+    <div onmouseleave="syslistclose()" class="syslist">
+        <table class="sysmenu">
+            <tr onclick="shutdown()">
+                <td class="sysname">Shut Down</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container"  style="left:5px;top:5px">
+        <div class="titlebar">
+            <div class="topbuttons"> <span onclick="minimizeWindow()"></span> <span onclick="topBeforeMinimized=5;leftBeforeMinimized=5;maximizeWindow()"></span> <span onclick="closewindow()"></span> </div>
+            <h1 class="title">UCanvas</h1>
+        </div>
+        <canvas id="canvas">Your browser Does't Support Canvas</canvas>
+        <div class="tools_panel">
+            <div onclick="mode='pen';paltask()" title="Brush(B)" class="brush_icon tool_icon">
+                <svg width="40" height="40"  viewBox="0 0 16 16">
+                    <path
+                        d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z" />
+                </svg>
+            </div>
+            <div onclick="erafun()" title="Eraser(E)" class="eraser_icon tool_icon">
+                <svg  width="40" height="40" viewBox="0 0 16 16">
+                    <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414l-3.879-3.879zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"/>
+                  </svg>
+            </div>
+            <div onclick="undo()" title="Undo(Ctrl+Z)" class="undo_icon tool_icon">
+                <svg width="40" height="40" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                    <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+                  </svg>
+            </div>
+           <div onclick="redo()" title="Redo(Ctrl+Y)" class="redo_icon tool_icon">
+            <svg width="40" height="40" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+              </svg>
+           </div> 
+           <div onclick="moretask()" title="More Tools" class="more_icon tool_icon">
+            <svg  width="40"  height="40"  viewBox="0 0 16 16">
+             <circle style="fill:#000000;fill-rule:evenodd;stroke-width:0.615385" id="path846" cx="8" cy="1.8785025" r="1.7077296" />
+             <circle style="fill:#000000;fill-rule:evenodd;stroke-width:0.615385" id="circle1094" cx="8" cy="8" r="1.7077296" />
+             <circle style="fill:#000000;fill-rule:evenodd;stroke-width:0.615385" id="circle1096" cx="8" cy="14.121498" r="1.7077296" />
+         </svg>
+         
+           </div>
+        </div>
+        <div class="color_panel">
+            <table class="color_palette">
+                <h1 class="crossbtnarea">
+                    <svg class="crossbtn" width="40" onclick="closepalette()" height="40" fill="white" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </h1>
+                <tr clas="color_pl_row">
+                    <td class="color_opt" ondblclick="paltask()" style="background-color:#6e0000" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()"  style="background-color:#ff0000" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#ff3d3d" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#ff8c00" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#ffb254" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#f0f400" onclick="changePenColor(this)"></td>    <td class="color_opt" ondblclick="paltask()" style="background-color:#9c9f00" onclick="changePenColor(this)"></td>
+                </tr>
+                
+                <tr clas="color_pl_row">
+                    <td class="color_opt" ondblclick="paltask()" style="background-color:#5eff00" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#3da500" onclick="changePenColor(this)"></td>    <td class="color_opt" ondblclick="paltask()" style="background-color:#1f5400" onclick="changePenColor(this)"></td>    <td class="color_opt" ondblclick="paltask()" style="background-color:#005430" onclick="changePenColor(this)"></td>    <td class="color_opt" ondblclick="paltask()" style="background-color:#01bb6b" onclick="changePenColor(this)"></td>    <td class="color_opt" ondblclick="paltask()" style="background-color:#00ff91" onclick="changePenColor(this)"></td>    <td class="color_opt" ondblclick="paltask()" style="background-color:#90ffcf" onclick="changePenColor(this)"></td>
+                </tr>
+
+                <tr clas="color_pl_row">
+                    <td class="color_opt" ondblclick="paltask()" style="background-color:#000dff" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#0009af" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#000676" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#2b0076" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#4500bd" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#5d00ff" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#8036ff" onclick="changePenColor(this)"></td>
+                </tr>
+
+                <tr clas="color_pl_row">
+                    <td class="color_opt" ondblclick="paltask()" style="background-color:#e600ff" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#a800ba" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#70007d" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#530024" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#930040" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#4d0021" onclick="changePenColor(this)"></td>  <td class="color_opt" ondblclick="paltask()" style="background-color:#000000" onclick="changePenColor(this)"></td>
+                </tr>
+            </table>
+            <input type="range" class="pensize" min="3" max="50" value="10" oninput="candrag=false;pensize=this.value">
+        </div>
+        <div class="eraser_opts">
+            <div class="custeraser"><label class="label_eraser" for="eraserSize">Eraser Size</label><input id="eraserSize" oninput="eraserSize=this.value" type="range" min="10" max="100" value="20" class="eraser_size"></div>
+            <div class="clear_canvas_btn" onclick="erafun();ClearCanvas()">Clear Canvas</div>
+        </div>
+        <div class="more_tools">
+            <table class="moretoolsopts">
+                <tr onclick="addToGallery();moretask()" class="morerow">
+                    <td moretoolicon>        
+                        <svg width="40" height="40" fill="white" viewBox="0 0 16 16">
+                            <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                            <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                          </svg>
+                        </td>
+                        <td class="moretoolname">
+                            Add To UGallery
+                        </td>
+                </tr>
+                <tr onclick="download();moretask()" class="morerow">
+                    <td class="moretoolicon">
+                        <svg width="40" height="40" fill="white" viewBox="0 0 16 16">
+                            <path d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+                            <path d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+                          </svg>
+                    </td>
+                    <td class="moretoolname">
+                        Download Image
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="gallery_container" style="left:5px;top:5px" id="gallery_window">
+        <div class="titlebar">
+            <div class="topbuttons"> <span onclick="minimizegallery()"></span> <span onclick="topBeforeMinimizedgal=5;leftBeforeMinimizedgal=5;galsavedwidth=window.innerWidth-20;galsavedheight=window.innerHeight-20;maximizegallery()"></span> <span onclick="closegallery()"></span> </div>
+            <h1 class="title">UGallery</h1>
+        </div>
+        <div class="gallery">
+            <div class="fileshow">
+                <h1 class="foldername" onclick="image_folder_show()">
+                    <svg height="20" width="20" id="svg5"  viewBox="0 0 50 50">
+                        <defs><linearGradient id="linear-gradient" x1="31.94" y1="50.02" x2="31.91" y2="17.45" gradientTransform="matrix(1, 0, 0, -1, -7.88, 60.16)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#69cdfd"/>
+                        <stop offset="1" stop-color="#3fb8f4"/>
+                        </linearGradient>
+                        </defs>
+                        <path id="path17315" d="M27.13,15.69H3.65c-1.29,0-2.32-1.31-2.32-2.94V11.08c0-3.2,2.15-4.67,5.15-4.67H17.69l9.49,6.34h0Z" transform="translate(-1.24 -6.41)" style="fill:#3398d1;fill-rule:evenodd"/>
+                        <path id="rect9613" d="M1.33,11.39H45a4.29,4.29,0,0,1,4.3,4.3v5A4.29,4.29,0,0,1,45,25H5.54a4.29,4.29,0,0,1-4.3-4.3v-5Z" transform="translate(-1.24 -6.41)" style="fill:#3398d1;fill-rule:evenodd"/>
+                        <rect id="rect1204" y="9.29" width="48.08" height="33.53" rx="3.95" style="fill:url(#linear-gradient)"/>
+                        </svg>
+                    Ucanvas Images
+                </h1>
+                <h1 class="foldername" onclick="trash_folder_show()">
+                    <svg height="20" width="20" id="svg5"  viewBox="0 0 50 50">
+                        <defs><linearGradient id="linear-gradient" x1="31.94" y1="50.02" x2="31.91" y2="17.45" gradientTransform="matrix(1, 0, 0, -1, -7.88, 60.16)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#69cdfd"/>
+                        <stop offset="1" stop-color="#3fb8f4"/>
+                        </linearGradient>
+                        </defs>
+                        <path id="path17315" d="M27.13,15.69H3.65c-1.29,0-2.32-1.31-2.32-2.94V11.08c0-3.2,2.15-4.67,5.15-4.67H17.69l9.49,6.34h0Z" transform="translate(-1.24 -6.41)" style="fill:#3398d1;fill-rule:evenodd"/>
+                        <path id="rect9613" d="M1.33,11.39H45a4.29,4.29,0,0,1,4.3,4.3v5A4.29,4.29,0,0,1,45,25H5.54a4.29,4.29,0,0,1-4.3-4.3v-5Z" transform="translate(-1.24 -6.41)" style="fill:#3398d1;fill-rule:evenodd"/>
+                        <rect id="rect1204" y="9.29" width="48.08" height="33.53" rx="3.95" style="fill:url(#linear-gradient)"/>
+                        </svg>
+                    ./Trash
+                </h1>
+
+            </div>
+            <div class="doc_show">
+                <h1 class="atmes">This Folder Is Empty</h1>
+            </div>
+            <div class="trash_show">
+                <h1 class="atmestrash">Nothing Up Here :)</h1>
+            </div>
+            <div class="imagePreview" style="top:50%;">
+                <h1 class="preimagecrs">
+                    <svg width="50" height="50" fill="white"  viewBox="0 0 16 16" onclick="preimageclose()">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                </h1>
+                <img src="" class="preimage" alt="Oops!We couldn't find your image">
+            </div>
+        </div>
+    </div>
+
+    <div class="recapplist">
+        <div onclick="maximizeWindow()"  style="left: calc(50% - 100px);" class="appicon"></div>
+        <div class="appicon2" onclick="image_folder_show();maximizegallery()"></div>
+</div>
+</div>
+
+
+<div class="blackscreen" >
+    <svg class="blackscreentitle" width="400" height="100" viewBox="0 0 400 100">
+    <g
+       aria-label="UBook">
+      <path
+         d="m 68.301624,14.121585 v 39.780597 c 0,11.706552 -9.21349,21.462012 -21.028435,21.895588 -0.216788,0 -0.433576,0 -0.758758,0 -0.216788,0 -0.433576,0 -0.758758,0 C 34.049121,75.364194 24.835631,65.608734 24.835631,53.902182 V 14.121585 H 14.429807 v 45.742267 c 0,5.4197 1.951092,10.731006 5.636488,14.741584 1.517516,1.517516 3.035032,2.926638 4.769336,4.227366 6.070064,4.552548 13.54925,7.262398 21.6788,7.262398 8.237943,0 15.717129,-2.601456 21.787193,-7.262398 1.62591,-1.192334 3.25182,-2.601456 4.660942,-4.227366 3.685396,-3.902184 5.636488,-9.21349 5.636488,-14.63319 V 14.121585 Z"
+         class="blackscreentitlecharel" />
+      <path
+         d="m 150.68103,55.419698 c -1.19233,-2.059486 -2.60145,-3.902184 -4.33576,-5.419699 -0.97554,-0.867152 -2.05948,-1.62591 -3.25182,-2.276274 0.75876,-0.867152 1.40913,-1.842698 2.05949,-2.926638 0,0 0,-0.108394 0.10839,-0.108394 1.62591,-3.035032 2.60146,-6.50364 2.60146,-10.189036 0,-3.577002 -0.97555,-7.04561 -2.60146,-9.972248 0,-0.108394 -0.10839,-0.216788 -0.10839,-0.216788 -3.577,-6.286852 -10.29743,-10.405824 -17.9934,-10.405824 H 89.00485 v 10.622612 h 40.43096 c 4.55255,0.975546 8.02116,5.094518 8.02116,9.972248 0,5.094518 -3.6854,9.321884 -8.56313,10.189036 H 99.410674 V 29.838715 H 89.00485 V 86.0952 h 38.15469 c 0.97554,0 1.8427,0 2.70985,-0.108394 0.86715,0.108394 1.8427,0.108394 2.70985,0.108394 7.80436,0 14.52479,-4.227366 18.10179,-10.622612 1.62591,-2.926638 2.60146,-6.395246 2.60146,-9.972248 0,-3.685396 -0.97555,-7.154004 -2.60146,-10.080642 z m -15.93391,20.05289 H 99.410674 v -20.05289 h 35.119656 c 4.76933,0.867152 8.34634,5.094518 8.34634,10.080642 0,4.87773 -3.46861,8.996702 -8.12955,9.972248 z"
+         class="blackscreentitlecharel" />
+      <path
+         d="m 196.20631,24.419015 c 14.09122,0 25.58099,11.598158 25.58099,25.689378 0,14.199613 -11.48977,25.689377 -25.58099,25.689377 -14.19961,0 -25.68937,-11.489764 -25.68937,-25.689377 0,-14.09122 11.48976,-25.689378 25.68937,-25.689378 z m -36.0952,25.689378 c 0,19.944495 16.15071,35.986807 36.0952,35.986807 19.8361,0 35.98681,-16.042312 35.98681,-35.986807 0,-19.944496 -16.15071,-35.986808 -35.98681,-35.986808 -19.94449,0 -36.0952,16.042312 -36.0952,35.986808 z"
+         class="blackscreentitlecharel" />
+      <path
+         d="m 275.00847,24.419015 c 14.09122,0 25.58098,11.598158 25.58098,25.689378 0,14.199613 -11.48976,25.689377 -25.58098,25.689377 -14.19962,0 -25.68938,-11.489764 -25.68938,-25.689377 0,-14.09122 11.48976,-25.689378 25.68938,-25.689378 z m -36.0952,25.689378 c 0,19.944495 16.1507,35.986807 36.0952,35.986807 19.8361,0 35.98681,-16.042312 35.98681,-35.986807 0,-19.944496 -16.15071,-35.986808 -35.98681,-35.986808 -19.9445,0 -36.0952,16.042312 -36.0952,35.986808 z"
+         class="blackscreentitlecharel" />
+      <path
+         d="M 331.69836,45.989421 V 14.121585 h -10.40582 v 42.273659 l 9.97225,-9.972247 z m 17.88501,4.118972 35.98681,-35.986808 h -14.63319 l -30.6755,30.675502 -8.56313,8.563125 v 0 l -10.40582,10.29743 V 86.0952 h 10.40582 V 68.101796 L 342.21258,57.479184 370.93699,86.0952 h 14.63319 z"
+         class="blackscreentitlecharel" />
+    </g>
+</svg>
+
+<h1 class="ubook_bottom_title"><sup class="supertext">Powered By</sup>Pineapple OS</h1>
+
+<div onclick="powerbtnclicked(this)" class="powbtnar">
+    <svg class="power_button"  viewBox="0 0 50 50">
+        <path d="M 25 2.6289062 A 22.37097 22.37097 0 0 0 24.619141 2.65625 A 22.37097 22.37097 0 0 1 25.097656 2.6308594 A 22.37097 22.37097 0 0 0 25 2.6289062 z M 25.234375 2.6347656 A 22.37097 22.37097 0 0 1 27.628906 2.7910156 A 22.37097 22.37097 0 0 0 25.234375 2.6347656 z M 25 2.8164062 C 23.668306 2.8164062 22.595703 3.9684163 22.595703 5.3984375 L 22.595703 25.121094 C 22.595703 26.551115 23.668306 27.703125 25 27.703125 C 26.331694 27.703125 27.404297 26.551115 27.404297 25.121094 L 27.404297 5.3984375 C 27.404297 3.9684163 26.331694 2.8164062 25 2.8164062 z M 27.835938 2.8164062 A 22.37097 22.37097 0 0 1 30.214844 3.25 A 22.37097 22.37097 0 0 0 27.835938 2.8164062 z M 22.134766 2.8339844 A 22.37097 22.37097 0 0 0 21.179688 2.9960938 A 22.37097 22.37097 0 0 1 22.134766 2.8339844 z M 30.318359 3.2734375 A 22.37097 22.37097 0 0 1 32.697266 4 A 22.37097 22.37097 0 0 0 30.318359 3.2734375 z M 19.230469 3.4199219 A 22.37097 22.37097 0 0 0 18.208984 3.7167969 A 22.37097 22.37097 0 0 1 19.230469 3.4199219 z M 32.867188 4.0644531 A 22.37097 22.37097 0 0 1 35.017578 5.0039062 A 22.37097 22.37097 0 0 0 32.867188 4.0644531 z M 16.345703 4.4121094 A 22.37097 22.37097 0 0 0 15.455078 4.7890625 A 22.37097 22.37097 0 0 1 16.345703 4.4121094 z M 13.140625 6.0507812 A 22.37097 22.37097 0 0 0 12.876953 6.1992188 A 22.37097 22.37097 0 0 1 13.140625 6.0507812 z M 10.548828 7.9433594 A 22.37097 22.37097 0 0 0 9.8710938 8.5722656 A 22.37097 22.37097 0 0 1 10.548828 7.9433594 z M 39.548828 8.015625 A 22.37097 22.37097 0 0 1 41.253906 9.6386719 A 22.37097 22.37097 0 0 0 39.548828 8.015625 z M 41.382812 9.7734375 A 22.37097 22.37097 0 0 1 42.982422 11.693359 A 22.37097 22.37097 0 0 0 41.382812 9.7734375 z M 8.4316406 10.011719 A 22.37097 22.37097 0 0 0 7.7441406 10.816406 A 22.37097 22.37097 0 0 1 8.4316406 10.011719 z M 6.5839844 12.365234 A 22.37097 22.37097 0 0 0 5.9980469 13.236328 A 22.37097 22.37097 0 0 1 6.5839844 12.365234 z M 7.5898438 12.685547 A 2.3335783 2.3335783 0 0 0 5.3066406 14.568359 A 22.37097 22.37097 0 0 0 2.6289062 25 A 22.37097 22.37097 0 0 0 25 47.371094 A 22.37097 22.37097 0 0 0 47.371094 25 A 22.37097 22.37097 0 0 0 44.746094 14.580078 A 2.3335783 2.3335783 0 0 0 42.457031 12.685547 A 2.3335783 2.3335783 0 0 0 40.123047 15.019531 A 2.3335783 2.3335783 0 0 0 40.730469 16.585938 A 17.8703 17.8703 0 0 1 42.871094 25 A 17.8703 17.8703 0 0 1 25 42.871094 A 17.8703 17.8703 0 0 1 7.1289062 25 A 17.8703 17.8703 0 0 1 9.3398438 16.5625 A 2.3335783 2.3335783 0 0 0 9.9238281 15.019531 A 2.3335783 2.3335783 0 0 0 7.5898438 12.685547 z " />
+    </svg>
+    <span class="powerTitle">Boot</span>
+</div>
+
+
+</div>
+
+
+<div class="shutdownscreen">
+    <svg class="blackscreentitle" width="400" height="100" viewBox="0 0 400 100">
+    <g
+       aria-label="UBook">
+      <path
+         d="m 68.301624,14.121585 v 39.780597 c 0,11.706552 -9.21349,21.462012 -21.028435,21.895588 -0.216788,0 -0.433576,0 -0.758758,0 -0.216788,0 -0.433576,0 -0.758758,0 C 34.049121,75.364194 24.835631,65.608734 24.835631,53.902182 V 14.121585 H 14.429807 v 45.742267 c 0,5.4197 1.951092,10.731006 5.636488,14.741584 1.517516,1.517516 3.035032,2.926638 4.769336,4.227366 6.070064,4.552548 13.54925,7.262398 21.6788,7.262398 8.237943,0 15.717129,-2.601456 21.787193,-7.262398 1.62591,-1.192334 3.25182,-2.601456 4.660942,-4.227366 3.685396,-3.902184 5.636488,-9.21349 5.636488,-14.63319 V 14.121585 Z"
+         class="shutdownscreentitlechar" />
+      <path
+         d="m 150.68103,55.419698 c -1.19233,-2.059486 -2.60145,-3.902184 -4.33576,-5.419699 -0.97554,-0.867152 -2.05948,-1.62591 -3.25182,-2.276274 0.75876,-0.867152 1.40913,-1.842698 2.05949,-2.926638 0,0 0,-0.108394 0.10839,-0.108394 1.62591,-3.035032 2.60146,-6.50364 2.60146,-10.189036 0,-3.577002 -0.97555,-7.04561 -2.60146,-9.972248 0,-0.108394 -0.10839,-0.216788 -0.10839,-0.216788 -3.577,-6.286852 -10.29743,-10.405824 -17.9934,-10.405824 H 89.00485 v 10.622612 h 40.43096 c 4.55255,0.975546 8.02116,5.094518 8.02116,9.972248 0,5.094518 -3.6854,9.321884 -8.56313,10.189036 H 99.410674 V 29.838715 H 89.00485 V 86.0952 h 38.15469 c 0.97554,0 1.8427,0 2.70985,-0.108394 0.86715,0.108394 1.8427,0.108394 2.70985,0.108394 7.80436,0 14.52479,-4.227366 18.10179,-10.622612 1.62591,-2.926638 2.60146,-6.395246 2.60146,-9.972248 0,-3.685396 -0.97555,-7.154004 -2.60146,-10.080642 z m -15.93391,20.05289 H 99.410674 v -20.05289 h 35.119656 c 4.76933,0.867152 8.34634,5.094518 8.34634,10.080642 0,4.87773 -3.46861,8.996702 -8.12955,9.972248 z"
+         class="shutdownscreentitlechar" />
+      <path
+         d="m 196.20631,24.419015 c 14.09122,0 25.58099,11.598158 25.58099,25.689378 0,14.199613 -11.48977,25.689377 -25.58099,25.689377 -14.19961,0 -25.68937,-11.489764 -25.68937,-25.689377 0,-14.09122 11.48976,-25.689378 25.68937,-25.689378 z m -36.0952,25.689378 c 0,19.944495 16.15071,35.986807 36.0952,35.986807 19.8361,0 35.98681,-16.042312 35.98681,-35.986807 0,-19.944496 -16.15071,-35.986808 -35.98681,-35.986808 -19.94449,0 -36.0952,16.042312 -36.0952,35.986808 z"
+         class="shutdownscreentitlechar" />
+      <path
+         d="m 275.00847,24.419015 c 14.09122,0 25.58098,11.598158 25.58098,25.689378 0,14.199613 -11.48976,25.689377 -25.58098,25.689377 -14.19962,0 -25.68938,-11.489764 -25.68938,-25.689377 0,-14.09122 11.48976,-25.689378 25.68938,-25.689378 z m -36.0952,25.689378 c 0,19.944495 16.1507,35.986807 36.0952,35.986807 19.8361,0 35.98681,-16.042312 35.98681,-35.986807 0,-19.944496 -16.15071,-35.986808 -35.98681,-35.986808 -19.9445,0 -36.0952,16.042312 -36.0952,35.986808 z"
+         class="shutdownscreentitlechar" />
+      <path
+         d="M 331.69836,45.989421 V 14.121585 h -10.40582 v 42.273659 l 9.97225,-9.972247 z m 17.88501,4.118972 35.98681,-35.986808 h -14.63319 l -30.6755,30.675502 -8.56313,8.563125 v 0 l -10.40582,10.29743 V 86.0952 h 10.40582 V 68.101796 L 342.21258,57.479184 370.93699,86.0952 h 14.63319 z"
+         class="shutdownscreentitlechar" />
+    </g>
+</svg>
+
+<h1 class="ubook_bottom_title"><sup class="supertext">Powered By</sup>Pineapple OS</h1>
+
+
+
+</div>
+
+<div class="entry">
+    Preparing....
+</div>
+<div class="devicetype">
+    Your Device Doesn't Support This Program.
+</div>
+
+    <script src="./os folders/script.js"></script>
+</body>
+
+</html>
