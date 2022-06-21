@@ -890,6 +890,9 @@ window.addEventListener("load",()=>{
     if(osdt.includes("Windows") || osdt.includes("Linux")){
         document.querySelector(".devicetype").style.display="none";
     }
+    else{
+        document.querySelector(".devicetype").style.display="block";
+    }
 })
 
 
