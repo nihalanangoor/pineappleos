@@ -1046,7 +1046,7 @@ function batteryupdate(){
                 bathrs = Math.floor(battery.chargingTime / 60/60);
                 batmins = Math.floor(((battery.chargingTime/60)-bathrs*60))
                 document.querySelector(".batrem_det").innerHTML=`${batsts}(${battery.level*100}%&nbsp;Available)`;
-                battery.onchargingchange = function(){
+                battery.onchargingtimechange = function(){
                     batsts="Charging";
                     bathrs = Math.floor(battery.chargingTime / 60/60);
                     batmins = Math.floor(((battery.chargingTime/60)-bathrs*60))
