@@ -965,8 +965,8 @@ function batteryupdate(){
     var batteryel = document.querySelector(".battery_in")
     navigator.getBattery().then(function(battery) {
         batteryel.style.width=`calc(${battery.level*100+"%"} - 4px)`;
-        document.querySelector(".batteryperc").textContent=battery.level*100+"%";
-        document.querySelector(".battery_det_perc").textContent=battery.level*100+"%";
+        document.querySelector(".batteryperc").textContent=Math.round(battery.level*100)+"%";
+        document.querySelector(".battery_det_perc").textContent=Math.round(battery.level*100)+"%";
         if(battery.charging){
             batsts="Charging";
             bathrs = Math.floor(battery.chargingTime / 60/60);
@@ -975,11 +975,11 @@ function batteryupdate(){
                 document.querySelector(".batrem_det").innerHTML=`${batsts}:&nbsp;${bathrs}&nbsp;Hour(s)&nbsp;${batmins}&nbsp;Minute(s)&nbsp;Remaining`;
             }
             else{
-                document.querySelector(".batrem_det").innerHTML=`${batsts}(${battery.level*100}%&nbsp;Available)`;
+                document.querySelector(".batrem_det").innerHTML=`${batsts}(${Math.round(battery.level*100)}%&nbsp;Available)`;
             }
         }
         else{
-            document.querySelector(".batrem_det").innerHTML=`${batsts}(${battery.level*100}%&nbsp;Available)`;
+            document.querySelector(".batrem_det").innerHTML=`${batsts}(${Math.round(battery.level*100)}%&nbsp;Available)`;
             if(bathrs!=Infinity){
                 batsts="Discharging";
                 bathrs = Math.floor(battery.dischargingTime / 60/60);
@@ -994,7 +994,7 @@ function batteryupdate(){
                 document.querySelector(".batrem_det").innerHTML=`${batsts}:&nbsp;${bathrs}&nbsp;Hour(s)&nbsp;${batmins}&nbsp;Minute(s)&nbsp;Remaining`;
             }
             else{
-                document.querySelector(".batrem_det").innerHTML=`${batsts}(${battery.level*100}%&nbsp;Available)`;
+                document.querySelector(".batrem_det").innerHTML=`${batsts}(${Math.round(battery.level*100)}%&nbsp;Available)`;
             }
         }
         else{
@@ -1004,7 +1004,7 @@ function batteryupdate(){
                 document.querySelector(".batrem_det").innerHTML=`${batsts}:&nbsp;${bathrs}&nbsp;Hour(s)&nbsp;${batmins}&nbsp;Minute(s)&nbsp;Remaining`;
             }
             else{
-                document.querySelector(".batrem_det").innerHTML=`${batsts}(${battery.level*100}%&nbsp;Available)`;
+                document.querySelector(".batrem_det").innerHTML=`${batsts}(${Math.round(battery.level*100)}%&nbsp;Available)`;
             }
         }
         if(battery.charging){
@@ -1016,8 +1016,8 @@ function batteryupdate(){
         // ... and any subsequent updates.
         battery.onlevelchange = function() {
             batteryel.style.width=`calc(${battery.level*100+"%"} - 4px)`;
-            document.querySelector(".batteryperc").textContent=battery.level*100+"%";
-            document.querySelector(".battery_det_perc").textContent=battery.level*100+"%";
+            document.querySelector(".batteryperc").textContent=Math.round(battery.level*100)+"%";
+            document.querySelector(".battery_det_perc").textContent=Math.round(battery.level*100)+"%";
             if(!battery.charging){
                 if(battery.dischargingTime!=Infinity){
                     bathrs = Math.floor(battery.dischargingTime / 60/60);
